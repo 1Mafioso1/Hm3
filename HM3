@@ -1,0 +1,119 @@
+'''
+#Завдання 1
+num1 = int(input("Введіть перше число: "))
+num2 = int(input("Введіть друге число: "))
+num3 = int(input("Введіть третє число: "))
+
+print("1 - сума")
+print("2 - добуток")
+x = int(input("Ваш вибір: "))
+
+if x == 1:
+    print(num1 + num2 + num3)
+else:
+    print(num1 * num2 * num3)
+
+#Завдання 2
+num1 = int(input("Введіть перше число: "))
+num2 = int(input("Введіть друге число: "))
+num3 = int(input("Введіть третє число: "))
+
+print("1 - максимум")
+print("2 - мінімум")
+print("3 - середнє арифметичне")
+x = int(input("Ваш вибір: "))
+
+if x == 1:
+    if num1 >= num2 and num1 >= num3:
+        print(num1)
+    elif num2 >= num1 and num2 >= num3:
+        print(num2)
+    else:
+        print(num3)
+elif x == 2:
+    if num1 <= num2 and num1 <= num3:
+        print(num1)
+    elif num2 <= num1 and num2 <= num3:
+        print(num2)
+    else:
+        print(num3)
+else:
+    print((num1 + num2 + num3) / 3)
+
+#Завдання 3
+num1 = int(input("Введіть оцінку (1-5): "))
+
+if num1 == 1:
+    print("Дуже погано")
+elif num1 == 2:
+    print("Погано")
+elif num1 == 3:
+    print("Задовільно")
+elif num1 == 4:
+    print("Добре")
+elif num1 == 5:
+    print("Відмінно")
+else:
+    print("Помилка")
+
+#Завдання 4
+num = int(input("Введіть метри: "))
+
+print("1 - милі")
+print("2 - дюйми")
+print("3 - ярди")
+print("4 - усі одиниці")
+print("5 - кілометри і сантиметри")
+x = int(input("Ваш вибір: "))
+
+if x == 1:
+    print(num / 1609)
+elif x == 2:
+    print(num * 39)
+elif x == 3:
+    print(num * 1)
+elif x == 4:
+    print("Милі:", num / 1609)
+    print("Дюйми:", num * 39)
+    print("Ярди:", num * 1)
+else:
+    print("Кілометри:", num / 1000)
+    print("Сантиметри:", num * 100)
+
+#Завдання 5
+num1 = int(input("Введіть перше число: "))
+num2 = int(input("Введіть друге число: "))
+
+print("1 - додавання")
+print("2 - віднімання")
+print("3 - множення")
+print("4 - ділення")
+print("5 - залишок")
+print("6 - степінь")
+x = int(input("Ваш вибір: "))
+
+if x == 1:
+    print(num1 + num2)
+elif x == 2:
+    print(num1 - num2)
+elif x == 3:
+    print(num1 * num2)
+elif x == 4:
+    print(num1 / num2)
+elif x == 5:
+    print(num1 % num2)
+else:
+    print(num1 ** num2)
+
+#Завдання 6
+num1 = int(input("Введіть тризначне число: "))
+
+a = num1 // 100
+b = (num1 // 10) % 10
+c = num1 % 10
+
+if a == b and b == c:
+    print("Всі цифри однакові")
+else:
+    print("Цифри різні")
+'''
